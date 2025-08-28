@@ -191,3 +191,35 @@ git push
 If you don't want to include it, you can ignore it.
 
 >>> @bot i dont want to push the files that starts with git_session bcoz they are your generated
+🤖 Okay, I understand. To prevent files starting with `git_session` from being tracked, you can add the following line to a `.gitignore` file in your repository:
+
+```
+git_session*
+```
+
+If you don't have a `.gitignore` file, create one first. This will tell Git to ignore those files. If the log file is already tracked, run `git rm --cached git_session_20250828_105542.log` before adding it to `.gitignore`. Then commit and push.
+
+[2025-08-28 11:02:45] >>> git add git_session_20250828_105542.log
+
+[2025-08-28 11:03:11] >>> git commit -m "GitMate Log 1"
+[main 5bfa57e] GitMate Log 1
+
+ 1 file changed, 140 insertions(+)
+
+
+[2025-08-28 11:03:17] >>> git push
+To https://github.com/TejasRaundal/Cryptography-and-Information-Security.git
+
+   6ef93f6..5bfa57e  main -> main
+
+
+>>> @bot is this fine now
+🤖 Yes, it looks like your changes have been successfully pushed. However, you mentioned you don't want to track `git_session` files. To stop tracking them, create a `.gitignore` file in your repository and add `git_session*` to it. Then, run `git rm --cached git_session_20250828_105542.log` to remove the file from the index. Finally, commit and push.
+
+>>> @bot no i will push to demonstrate your abilities to the public
+🤖 Understood! I'm ready for my demo. Just let me know what you'd like to do, and I'll do my best to assist. For example, are you planning to make some changes to a file, or try branching?
+
+>>> @bot you are already done that
+🤖 Ah, I see. You've already pushed the log file for demonstration purposes. Great!
+
+Is there anything else you'd like to showcase, or is there a specific task you have in mind? Perhaps you'd like to create a new branch to experiment with? Just let me know what you want to do next.
