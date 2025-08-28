@@ -51,3 +51,143 @@ This will upload your local repository to GitHub. Let me know if you encounter a
 [2025-08-28 10:59:22] >>> git push -u origin main
 error: src refspec main does not match any
 
+🤖 Yes, I can help! The error "src refspec main does not match any" means you probably haven't added any files to your local repository yet.
+
+First, add your files:
+
+```
+git add .
+```
+
+Then, commit them:
+
+```
+git commit -m "Initial commit"
+```
+
+Finally, try pushing again:
+
+```
+git push -u origin main
+```
+
+Let me know if that works!
+
+[2025-08-28 10:59:38] >>> git add .
+warning: in the working copy of '.vscode/c_cpp_properties.json', LF will be replaced by CRLF the next time Git touches it
+
+warning: in the working copy of '.vscode/launch.json', LF will be replaced by CRLF the next time Git touches it
+
+warning: in the working copy of '.vscode/settings.json', LF will be replaced by CRLF the next time Git touches it
+
+
+[2025-08-28 11:00:01] >>> git commit -m "Assignment 1 and 2"
+[master (root-commit) 6ef93f6] Assignment 1 and 2
+
+ 14 files changed, 433 insertions(+)
+
+ create mode 100644 .gitignore
+
+ create mode 100644 .vscode/c_cpp_properties.json
+
+ create mode 100644 .vscode/launch.json
+
+ create mode 100644 .vscode/settings.json
+
+ create mode 100644 Assignment 1/Affine.py
+
+ create mode 100644 Assignment 1/CaesarCipher.cpp
+
+ create mode 100644 Assignment 1/atbash.py
+
+ create mode 100644 Assignment 1/caesar.py
+
+ create mode 100644 Assignment 1/hill.py
+
+ create mode 100644 Assignment 1/keyword_1.py
+
+ create mode 100644 Assignment 1/playfair.py
+
+ create mode 100644 Assignment 1/vigenere.py
+
+ create mode 100644 Assignment 3/rsa.py
+
+ create mode 100644 git_session_20250828_105542.log
+
+
+[2025-08-28 11:00:17] >>> git push -u origin main
+error: src refspec main does not match any
+
+🤖 It seems like your local branch `main` isn't connected to the remote `main` branch. This can happen sometimes.
+
+Try this command to explicitly set the upstream branch:
+
+```
+git push --set-upstream origin main
+```
+
+This will link your local `main` branch to the remote `origin/main` branch and should resolve the issue. Let me know if it works!
+
+[2025-08-28 11:00:36] >>> git push --set-upstream origin main
+error: src refspec main does not match any
+
+🤖 It seems like the `main` branch might not exist locally. Could you try creating it first?
+
+```
+git checkout -b main
+```
+
+Then, try pushing again:
+
+```
+git push --set-upstream origin main
+```
+
+If that still doesn't work, please confirm that you want to push to the `main` branch and not another branch like `master`.
+
+[2025-08-28 11:00:53] >>> git checkout -b main
+Switched to a new branch 'main'
+
+
+[2025-08-28 11:01:00] >>> git push --set-upstream origin main
+branch 'main' set up to track 'origin/main'.
+
+To https://github.com/TejasRaundal/Cryptography-and-Information-Security.git
+
+ * [new branch]      main -> main
+
+
+[2025-08-28 11:01:09] >>> git status
+On branch main
+
+Your branch is up to date with 'origin/main'.
+
+
+
+Changes not staged for commit:
+
+  (use "git add <file>..." to update what will be committed)
+
+  (use "git restore <file>..." to discard changes in working directory)
+
+	modified:   git_session_20250828_105542.log
+
+
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+>>> @bot is this good now
+🤖 Yes, it looks like the push was successful! However, you have an uncommitted change in `git_session_20250828_105542.log`.
+
+If you want to include that change, you can do:
+
+```
+git add git_session_20250828_105542.log
+git commit -m "Update log file"
+git push
+```
+
+If you don't want to include it, you can ignore it.
+
+>>> @bot i dont want to push the files that starts with git_session bcoz they are your generated
